@@ -4,4 +4,5 @@ Spring Cloud Config Server. Microservice for betting-app project - https://githu
 
 * port 8888
 * responsible for serving configuration for other microservices
-* encrypting some of sensitive environment variables
+* encrypting sensitive environment variables
+* is secured by basic Spring Security so there is no possibility to get any resources without credentials
