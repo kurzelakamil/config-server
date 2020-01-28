@@ -6,18 +6,11 @@ spring:
           uri: https://github.com/kurzelakamil/config-files
   security:
     user:
-      name: ${USER}
-      password: ${PASSWORD}
+      name: ${CONFIG_USER}
+      password: ${CONFIG_PASSWORD}
 
 encrypt:
   key: ${ENCRYPT_KEY}
 
 server:
-  port: ${PORT}
-
----
-spring:
-  profiles: local
-
-server:
-  port: 8888
+  port: ${CONFIG_SERVER_PORT}
